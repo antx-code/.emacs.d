@@ -1,0 +1,88 @@
+* Antx Emacs
+  ~Antx Emacs~ is my personal emacs configuration file, and I am a colemak user.
+
+  * [[#dependencies][Dependencies]]
+  * [[#installation][Installation]]
+    - [[#update-site-lisp][Update Site Lisp]]
+    - [[#add-more-site-lisp][Add More Site Lisp]]
+  * [[#shortcuts][Shortcuts]]
+  * [[#token][Token]]
+  * [[#notes][Notes]]
+  * [[#contributors][Contributors]]
+
+** Dependencies
+   You need some dependencies at below:
+   - Emacs (Details like version and system is in [[#notes][Notes part]])
+   - Git
+   - DejaVu Sans (You can edit the font use ~SPC q c site-lisp TAB config TAB init-font.el RET~)
+   - WenQuanYi MicroHei
+   - The dependencies in each submodules. (To use them)
+   - ~ttf-symbola~ font. (Optional. Telega icons)
+
+** Installation
+   Clone this repository to your ~$HOME~
+
+   And install the [[#dependencies][dependencies]]
+
+   Then, run command below:
+   #+begin_src shell
+   git submodule update --init --recursive
+   #+end_src
+   And see the [[#token][Token]] part to edit ~eaf-grip-token~
+
+   Then enjoy the Emacs!
+
+*** Update Site Lisp
+    If you want to update the packages in ~site-lisp~ folder, you need to run command below:
+    #+begin_src shell
+    git submodule foreach git pull
+    #+end_src
+    #+begin_src shell
+    git pull --recurse-submodules
+    #+end_src
+    Or:
+    #+begin_src shell
+    git submodule update --recursive
+    #+end_src
+
+*** Add More Site Lisp
+    If you want to add more site lisp, you can run commands below:
+    #+begin_src shell
+    git clone <repo link> site-lisp/<repo name>
+    git submodule add <repo link> site-lisp/<repo name>
+    #+end_src
+    Then you can manage your third party packages by ~git submodule~!
+
+** Shortcuts
+*** Default
+    I binded the ~C-q~ key to be the user defined key.
+
+    ~C-q~ key bind the functions in ~site-lisp/config/init-functions.el~
+
+    You can view this file and change somethings.
+
+*** Xah Fly Keys
+    Stop using. But if you want to use, you can uncomment the ~(require 'init-xfk)~ line and comment the ~(require 'init-meow)~ line.
+
+*** Meow
+    I'm configuring the meow configuration file in ~init-meow.el~
+
+** Token
+   You need to do the following to make markdown/org preview work properly:
+   - Edit the ~init-eaf.el~ file and edit somethings below:
+   #+begin_src emacs-lisp
+     (setq eaf-grip-token "token")
+   #+end_src
+   And go to the [[https://github.com/settings/tokens/new?scopes=][GitHub Personal Access Token Site]] to create your personal token.
+
+   Then replace ~token~ to your personal token.
+
+** Notes
+   - This configuration file is best run on GNU/Linux and GNU/Emacs 28 or above, Windows and lower versions may be failed.
+   - Emacs can't search and autoload ~site-start.el~, so you need create an ~.emacs~ file in your home directory and write them in:
+     #+begin_src emacs-lisp
+       (load-file "path/to/site-start.el")
+     #+end_src
+
+** Reference
+	 - [[https://github.com/KiteAB/.emacs.d][KiteAB's Emacs Configuration]]

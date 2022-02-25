@@ -1,0 +1,48 @@
+[submodule "site-lisp/extensions/auto-save"]
+	path = site-lisp/extensions/auto-save
+	url = https://github.com/manateelazycat/auto-save
+[submodule "site-lisp/extensions/awesome-tray"]
+	path = site-lisp/extensions/awesome-tray
+	url = https://github.com/manateelazycat/awesome-tray
+[submodule "site-lisp/extensions/company-english-helper"]
+	path = site-lisp/extensions/company-english-helper
+	url = https://github.com/manateelazycat/company-english-helper
+[submodule "site-lisp/extensions/insert-translated-name"]
+	path = site-lisp/extensions/insert-translated-name
+	url = https://github.com/manateelazycat/insert-translated-name
+[submodule "site-lisp/extensions/lazycat-theme"]
+	path = site-lisp/extensions/lazycat-theme
+	url = https://github.com/manateelazycat/lazycat-theme
+[submodule "site-lisp/extensions/valign"]
+	path = site-lisp/extensions/valign
+	url = https://github.com/casouri/valign
+[submodule "site-lisp/extensions/nox"]
+	path = site-lisp/extensions/nox
+	url = https://github.com/manateelazycat/nox
+[submodule "site-lisp/extensions/awesome-pair"]
+	path = site-lisp/extensions/awesome-pair
+	url = https://github.com/manateelazycat/awesome-pair
+[submodule "site-lisp/extensions/pacarch"]
+	path = site-lisp/extensions/pacarch
+	url = https://github.com/KitPixel/pacarch
+[submodule "site-lisp/extensions/lazy-load"]
+	path = site-lisp/extensions/lazy-load
+	url = https://github.com/manateelazycat/lazy-load
+[submodule "site-lisp/extensions/snails"]
+	path = site-lisp/extensions/snails
+	url = https://github.com/manateelazycat/snails
+[submodule "site-lisp/extensions/joker-theme"]
+	path = site-lisp/extensions/joker-theme
+	url = https://github.com/DogLooksGood/joker-theme
+[submodule "site-lisp/extensions/storybook-theme"]
+	path = site-lisp/extensions/storybook-theme
+	url = https://github.com/DogLooksGood/storybook-theme
+[submodule "site-lisp/extensions/printed-theme"]
+	path = site-lisp/extensions/printed-theme
+	url = https://github.com/DogLooksGood/printed-theme
+[submodule "site-lisp/extensions/emacs-application-framework"]
+	path = site-lisp/extensions/emacs-application-framework
+	url = https://github.com/manateelazycat/emacs-application-framework
+[submodule "site-lisp/extensions/ligature.el"]
+	path = site-lisp/extensions/ligature.el
+	url = https://github.com/mickeynp/ligature.el
