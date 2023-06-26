@@ -100,7 +100,6 @@
          (require 'init-multiple-cursors)
          (require 'init-auto-sudoedit)
          (require 'init-nerd-commenter)
-         (require 'init-pacarch)
          (require 'init-clm)
          ;; (require 'init-paren-face)
          (require 'init-comment)
